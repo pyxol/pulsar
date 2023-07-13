@@ -12,7 +12,9 @@
     "authors": [
         {
             "name": "Don Wilson",
-            "email": "don@pyxol.com"
+            "email": "don@pyxol.com",
+			"homepage": "http://pyxol.com/",
+			"role": "Lead Developer"
         }
     ],
     "require": {
