@@ -1,0 +1,16 @@
+# composer
+vendor/
+
+# editors
+/.vscode
+
+# phpunit
+/phpunit.xml
+/.phpunit.cache
+.phpunit.result.cache
+
+# log files
+*.log
+
+# ideas
+.idea/*

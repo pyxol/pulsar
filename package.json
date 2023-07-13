@@ -1,0 +1,5 @@
+{
+	"scripts": {
+		"dev-run": "cd ./public/ && php -S localhost:8000"
+	}
+}
