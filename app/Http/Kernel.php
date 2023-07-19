@@ -3,8 +3,8 @@
 	
 	namespace App\Http;
 	
-	use Magnetar\Kernel\Http\Kernel as BaseKernel;
+	use Magnetar\Kernel\Http\Kernel as HttpKernel;
 	
-	class Kernel extends BaseKernel {
+	class Kernel extends HttpKernel {
 		
 	}

@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pyxol/magnetar.git",
-                "reference": "2b169498c6a75a34f1de2c8db9084ded3a9cc30f"
+                "reference": "1796d506c5713a853d8509c4f0dbb9cd7bf3072b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pyxol/magnetar/zipball/2b169498c6a75a34f1de2c8db9084ded3a9cc30f",
-                "reference": "2b169498c6a75a34f1de2c8db9084ded3a9cc30f",
+                "url": "https://api.github.com/repos/pyxol/magnetar/zipball/1796d506c5713a853d8509c4f0dbb9cd7bf3072b",
+                "reference": "1796d506c5713a853d8509c4f0dbb9cd7bf3072b",
                 "shasum": ""
             },
             "require": {
@@ -38,6 +38,7 @@
             "type": "library",
             "autoload": {
                 "files": [
+                    "src/Magnetar/_autoload.php",
                     "src/Magnetar/Template/_autoload.php"
                 ],
                 "psr-4": {
@@ -51,21 +52,22 @@
             "authors": [
                 {
                     "name": "Don Wilson",
-                    "email": "donwilson@gmail.com",
-                    "homepage": "http://pyxol.com/",
+                    "email": "don@pyxol.com",
+                    "homepage": "https://pyxol.com/",
                     "role": "Lead Developer"
                 }
             ],
             "description": "Magnetar is a web application framework that focuses on speed and ease of use.",
+            "homepage": "https://pyxol.com",
             "keywords": [
                 "framework",
                 "magnetar"
             ],
             "support": {
                 "issues": "https://github.com/pyxol/magnetar/issues",
-                "source": "https://github.com/pyxol/magnetar/tree/master"
+                "source": "https://github.com/pyxol/magnetar"
             },
-            "time": "2023-07-13T20:25:23+00:00"
+            "time": "2023-07-18T23:55:25+00:00"
         }
     ],
     "packages-dev": [
@@ -688,16 +690,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.2.4",
+            "version": "10.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "68484779b5a2ed711fbdeba6ca01910d87acdff2"
+                "reference": "1c17815c129f133f3019cc18e8d0c8622e6d9bcd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/68484779b5a2ed711fbdeba6ca01910d87acdff2",
-                "reference": "68484779b5a2ed711fbdeba6ca01910d87acdff2",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/1c17815c129f133f3019cc18e8d0c8622e6d9bcd",
+                "reference": "1c17815c129f133f3019cc18e8d0c8622e6d9bcd",
                 "shasum": ""
             },
             "require": {
@@ -769,7 +771,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.2.4"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.2.6"
             },
             "funding": [
                 {
@@ -785,7 +787,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-07-10T04:06:08+00:00"
+            "time": "2023-07-17T12:08:28+00:00"
         },
         {
             "name": "psr/log",

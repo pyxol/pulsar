@@ -4,30 +4,50 @@
 	namespace App\Http\Controllers;
 	
 	use Magnetar\Http\Controller\Controller;
-	
-	use Magnetar\Helpers\Facades\DB;
-	use Magnetar\Helpers\Facades\App;
 	use Magnetar\Helpers\Facades\Response;
+	use Magnetar\Helpers\Facades\DB;
+	use Magnetar\Helpers\Facades\Cache;
+	use Magnetar\Helpers\Facades\Log;
 	
 	class HomeController extends Controller {
-		public function index() {
-			return Response::send('Hello, World!<br><a href="/db/">DB</a> | <a href="/dev/">Dev</a>');
+		public function index(): void {
+			Response::send(
+				tpl('frontpage')
+			);
 		}
 		
-		public function db() {
-			// in lieu of service workers
-			App::bind('database', fn () => new \Magnetar\Database\ConnectionManager(App::getInstance()));
-			
-			print "DevController::db - ". App::make('config')->get('database.default') ."<br>\n";
-			
+		public function db(): void {
+			// list tables
 			$tables = DB::get_rows("
 				SHOW TABLES
 			");
 			
-			Response::send('<pre>'. esc_html(print_r($tables, true)) .'</pre>');
+			Response::send(
+				tpl('database/tables', [
+					'tables' => $tables,
+				])
+			);
 		}
 		
-		public function devpage() {
-			Response::send('Dev page');
+		public function set_cache(): void {
+			$cached_val = date('r');
+			$cache_set = Cache::set('cached_val', $cached_val, 15);
+			
+			Response::send(
+				tpl('cache/set', [
+					'cached_val' => $cached_val,
+					'cache_set' => $cache_set,
+					'log' => Log::dump(0, true),
+				])
+			);
+		}
+		
+		public function get_cache(): void {
+			Response::send(
+				tpl('cache/get', [
+					'cached_val' => Cache::get('cached_val') ?? 'NOT SET',
+					'log' => Log::dump(0, true),
+				])
+			);
 		}
 	}

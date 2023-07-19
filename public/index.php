@@ -28,17 +28,22 @@
 	
 	// routes
 	$kernel->get(
-		'/^dev\/?/i',
-		[HomeController::class, 'devpage']
+		'/^cache\/set\/?$/i',
+		[HomeController::class, 'set_cache']
 	);
 	
 	$kernel->get(
-		'/^db\/?/i',
+		'/^cache\/get\/?$/i',
+		[HomeController::class, 'get_cache']
+	);
+	
+	$kernel->get(
+		'/^db\/?$/i',
 		[HomeController::class, 'db']
 	);
 	
 	$kernel->get(
-		'/^\/?/i',
+		'/^\/?$/i',
 		[HomeController::class, 'index']
 	);
 	

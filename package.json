@@ -1,5 +1,8 @@
 {
 	"scripts": {
-		"dev-run": "cd ./public/ && php -S localhost:8000"
+		"php-server": "cd ./public/ && php -S localhost:80",
+		"docker-server": "docker compose up",
+		"docker-daemon-up": "docker compose up -d",
+		"docker-daemon-down": "docker compose down"
 	}
 }

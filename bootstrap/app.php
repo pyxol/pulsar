@@ -1,20 +1,15 @@
 <?php
 	declare(strict_types=1);
 	
-	use App\Application;
-	use App\Kernel;
+	use Magnetar\Application;
+	use App\Http\Kernel;
 	
-	$app = new Magnetar\Application(
+	$app = new Application(
 		dirname(__DIR__)
 	);
 	
-	// $app->singleton(Kernel::class, function($app) {
-	// 	return new Kernel($app);
-	// });
-	
-	$app->singleton(
-		Magnetar\Kernel\Http\Kernel::class,
-		App\Http\Kernel::class
-	);
+	$app->singleton(Kernel::class, function($app) {
+		return new Kernel($app);
+	});
 	
 	return $app;
