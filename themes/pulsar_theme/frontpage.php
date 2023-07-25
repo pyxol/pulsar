@@ -4,7 +4,7 @@
 	]);
 ?>
 	
-	<h1>Magnetar Framework</h1>
+	<h1>Pulsar Web App</h1>
 	
 	<p>Welcome to a fully featured Web Application framework powered by <a href="https://www.github.com/pyxol/magnetar/" target="_blank">Magnetar</a>.</p>
 	

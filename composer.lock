@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pyxol/magnetar.git",
-                "reference": "19532af1814441e5740541d3f0ea53eda7a85c65"
+                "reference": "ad957240ef47d2a8dee53d78f66349e6ed97733d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pyxol/magnetar/zipball/19532af1814441e5740541d3f0ea53eda7a85c65",
-                "reference": "19532af1814441e5740541d3f0ea53eda7a85c65",
+                "url": "https://api.github.com/repos/pyxol/magnetar/zipball/ad957240ef47d2a8dee53d78f66349e6ed97733d",
+                "reference": "ad957240ef47d2a8dee53d78f66349e6ed97733d",
                 "shasum": ""
             },
             "require": {
@@ -67,7 +67,7 @@
                 "issues": "https://github.com/pyxol/magnetar/issues",
                 "source": "https://github.com/pyxol/magnetar"
             },
-            "time": "2023-07-25T21:08:53+00:00"
+            "time": "2023-07-25T21:21:08+00:00"
         }
     ],
     "packages-dev": [

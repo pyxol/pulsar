@@ -12,7 +12,7 @@
 		// timezone
 		'timezone' => 'UTC',
 		
-		// internal encoding charset (mb_insertnal_encoding)
+		// internal encoding charset (mb_internal_encoding)
 		'internal_encoding' => 'UTF-8',
 		
 		// aliases to load
