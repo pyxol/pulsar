@@ -7,11 +7,21 @@ Magnetar is a robust PHP framework for creating highly scalable, blazing fast we
 
 ### Getting Started
 
+#### Docker
+
+1. Clone the repository `git clone https://github.com/pyxol/pulsar.git`
+2. Using CLI navigate into the newly created `pulsar` directory
+3. Run `docker-compose up -d`
+4. View the website at [http://localhost/](http://localhost/)
+
+#### Manual
+
 1. Clone the repository `git clone https://github.com/pyxol/pulsar.git`
 2. Using CLI navigate into the newly created `pulsar` directory
 3. Install [Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-macos) if needed
 4. Install the framework using either `composer install` or `php composer.phar install` depending on your environment.
 5. Point your web server to the `public` directory
+6. View the website using your web server's URL
 
 ### Issues
 If you run into any issues, please [open an issue](https://github.com/pyxol/pulsar/issues).
