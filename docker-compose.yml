@@ -28,6 +28,8 @@ services:
       PROJECT_NAME: ${COMPOSE_PROJECT_NAME}
       DB_HOST: "${COMPOSE_PROJECT_NAME}-mariadb-1"
       CACHE_HOST: "${COMPOSE_PROJECT_NAME}-memcached-1"
+      #DB_CONNECTION: sqlite
+      #DB_DATABASE: /pulsar/path/to/database.sqlite3
     #ports:
       #- 9000:9000
       #- 9003:9003
