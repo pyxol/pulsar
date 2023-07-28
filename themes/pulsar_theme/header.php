@@ -21,9 +21,6 @@
 				
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a href="/db/" class="nav-link">DB</a>
-						</li>
 						<li class="nav-item dropdown">
 							<a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 								Cache
@@ -35,9 +32,9 @@
 							</ul>
 						</li>
 					</ul>
-					<form class="d-flex" role="search">
-						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-						<button class="btn btn-outline-success" type="submit">Search</button>
+					<form method="get" action="/search/" class="d-flex" role="search">
+						<input type="search" name="q" value="" class="form-control me-2" placeholder="Search" aria-label="Search">
+						<button type="submit" class="btn btn-outline-success">Search</button>
 					</form>
 				</div>
 			</div>

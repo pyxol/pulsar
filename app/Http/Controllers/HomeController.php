@@ -5,7 +5,6 @@
 	
 	use Magnetar\Http\Controller\Controller;
 	use Magnetar\Helpers\Facades\Response;
-	use Magnetar\Helpers\Facades\DB;
 	use Magnetar\Helpers\Facades\Cache;
 	use Magnetar\Helpers\Facades\Log;
 	
@@ -13,19 +12,6 @@
 		public function index(): void {
 			Response::send(
 				tpl('frontpage')
-			);
-		}
-		
-		public function db(): void {
-			// list tables
-			$tables = DB::get_rows("
-				SHOW TABLES
-			");
-			
-			Response::send(
-				tpl('database/tables', [
-					'tables' => $tables,
-				])
 			);
 		}
 		

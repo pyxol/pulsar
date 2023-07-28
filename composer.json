@@ -19,10 +19,9 @@
     ],
     "require": {
         "php": "^8.1",
-        "pyxol/magnetar": "dev-master"
+        "pyxol/magnetar": "self.version"
     },
     "require-dev": {
-        "filp/whoops": "^2.15",
         "phpunit/phpunit": "^10.2"
     },
     "autoload": {

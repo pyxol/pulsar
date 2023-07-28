@@ -1,15 +1,18 @@
 <?php
 	declare(strict_types=1);
 	
-	use Magnetar\Application;
-	use App\Http\Kernel;
+	// determine when the application started
+	define('MAGNETAR_START', microtime(true));
 	
-	$app = new Application(
+	// start the application
+	$app = new Magnetar\Application(
 		dirname(__DIR__)
 	);
 	
-	$app->singleton(Kernel::class, function($app) {
-		return new Kernel($app);
-	});
+	// register our app's kernel
+	$app->singleton(
+		Magnetar\Http\Kernel::class,
+		App\Http\Kernel::class
+	);
 	
 	return $app;
