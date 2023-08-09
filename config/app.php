@@ -25,5 +25,6 @@
 		'providers' => ServiceProvider::defaultProviders()->merge([
 			// additional default Service Providers
 			App\ServiceProviders\AppServiceProvider::class,
+			App\ServiceProviders\RoutingServiceProvider::class,
 		])->toArray(),
 	];

@@ -4,8 +4,9 @@
 	namespace App\ServiceProviders;
 	
 	use Magnetar\Helpers\ServiceProvider;
+	use Magnetar\Router\RouterFileLoader;
 	
-	class AppServiceProvider extends ServiceProvider {
+	class RoutingServiceProvider extends ServiceProvider {
 		/**
 		 * Register application-specific services
 		 * @return void
@@ -15,10 +16,13 @@
 		}
 		
 		/**
-		 * Bootstrap application-specific services
+		 * Boot logic for service provider
 		 * @return void
 		 */
 		public function boot(): void {
-			// @TODO boot() method doesn't seem to work yet
+			// register routes
+			(new RouterFileLoader($this->app['router']))->loadFrom(
+				$this->app->pathRouting('website.php')
+			);
 		}
 	}
