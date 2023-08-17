@@ -15,4 +15,10 @@
 		App\Http\Kernel::class
 	);
 	
+	// register our app's console kernel
+	$app->singleton(
+		Magnetar\Console\Kernel::class,
+		App\Console\Kernel::class
+	);
+	
 	return $app;
