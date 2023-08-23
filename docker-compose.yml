@@ -42,10 +42,11 @@ services:
   mariadb:
     image: mariadb
     restart: unless-stopped
-    env_file:
-      - ./.docker/mariadb/.env
     environment:
       MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: 1
+      MARIADB_DATABASE: "${DB_DATABASE}"
+      MARIADB_USER: "${DB_USER}"
+      MARIADB_PASSWORD: "${DB_PASSWORD}"
     command: [
       '--default_authentication_plugin=mysql_native_password',
       '--character-set-server=utf8mb4',

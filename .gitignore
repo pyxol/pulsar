@@ -17,3 +17,6 @@ vendor/
 
 # ideas
 /.idea
+
+# docker
+/.docker/mariadb/data

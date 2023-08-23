@@ -11,7 +11,7 @@
 	<div class="container">
 		<nav class="navbar navbar-expand-lg bg-light">
 			<div class="container-fluid">
-				<a href="/" class="navbar-brand">
+				<a href="<?=URL::to('/');?>" class="navbar-brand">
 					<?=esc_html(config('app.name', "Pulsar"));?>
 				</a>
 				
@@ -21,18 +21,13 @@
 				
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item dropdown">
-							<a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Cache
+						<li class="nav-item">
+							<a href="<?=URL::to('/');?>" class="nav-link">
+								Home
 							</a>
-							<ul class="dropdown-menu">
-								<li><a href="/cache/get/" class="dropdown-item">Get</a></li>
-								<li><hr class="dropdown-divider"></li>
-								<li><a href="/cache/set/" class="dropdown-item">Set</a></li>
-							</ul>
 						</li>
 					</ul>
-					<form method="get" action="/search/" class="d-flex" role="search">
+					<form method="get" action="<?=URL::to('/search/');?>" class="d-flex" role="search">
 						<input type="search" name="q" value="" class="form-control me-2" placeholder="Search" aria-label="Search">
 						<button type="submit" class="btn btn-outline-success">Search</button>
 					</form>
