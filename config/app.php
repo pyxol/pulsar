@@ -10,7 +10,10 @@
 		'env' => env('APP_ENV', 'production'),
 		
 		// timezone
-		'timezone' => 'UTC',
+		'timezone' => env('APP_TIMEZONE', 'UTC'),
+		
+		// debug
+		'debug' => env('APP_DEBUG', false),
 		
 		// internal encoding charset (mb_internal_encoding)
 		'internal_encoding' => 'UTF-8',

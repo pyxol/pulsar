@@ -1,7 +1,10 @@
 <?php
 	return [
+		// the key from the 'connections' array below used for
+		// the default database connection
 		'default' => env('DB_CONNECTION', 'mariadb'),
 		
+		// database connection settings
 		'connections' => [
 			'mariadb' => [
 				'adapter' => 'mariadb',

@@ -1,0 +1,23 @@
+#!/usr/bin/env php
+<?php
+	define('MAGNETAR_START', microtime(true));
+	
+	require_once(__DIR__ ."/vendor/autoload.php");
+	
+	// bootstrap the application
+	$app = require_once(__DIR__ ."/bootstrap/app.php");
+	
+	// create the console kernel
+	$kernel = $app->make(Magnetar\Console\Kernel::class);
+	
+	// run the console kernel
+	$status = $kernel->handle(
+		$input = new Magnetar\Console\ArgvInput,
+		new Magnetar\Console\Output
+	);
+	
+	// terminate the console kernel
+	$kernel->terminate($input, $status);
+	
+	// exit with the status code
+	exit($status);
