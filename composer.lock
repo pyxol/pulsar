@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "36a56e300778688ed34a3ed89cdb1eea",
+    "content-hash": "0a11815951bfe6ef7f89eb5063154c82",
     "packages": [
         {
             "name": "pyxol/magnetar",
-            "version": "dev-master",
+            "version": "v0.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pyxol/magnetar.git",
-                "reference": "52496d5e545b1b1866cd86d646d42d17c4f4f71f"
+                "reference": "fcb9f02fba9ee6b33d918035be8d93128b3ce169"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pyxol/magnetar/zipball/52496d5e545b1b1866cd86d646d42d17c4f4f71f",
-                "reference": "52496d5e545b1b1866cd86d646d42d17c4f4f71f",
+                "url": "https://api.github.com/repos/pyxol/magnetar/zipball/fcb9f02fba9ee6b33d918035be8d93128b3ce169",
+                "reference": "fcb9f02fba9ee6b33d918035be8d93128b3ce169",
                 "shasum": ""
             },
             "require": {
@@ -34,7 +34,6 @@
                 "filp/whoops": "Strongly suggested for development environments",
                 "phpunit/phpunit": "Required for running unit tests"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "files": [
@@ -67,7 +66,7 @@
                 "issues": "https://github.com/pyxol/magnetar/issues",
                 "source": "https://github.com/pyxol/magnetar"
             },
-            "time": "2023-08-23T18:45:15+00:00"
+            "time": "2023-08-24T18:29:57+00:00"
         }
     ],
     "packages-dev": [
@@ -1683,9 +1682,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "pyxol/magnetar": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
